@@ -1,5 +1,6 @@
  var mongoose = require('mongoose');
- mongoose.connect('mongodb://localhost/27017');
+ mongoose.connect('mongodb://localhost:27017/cat_app');
+//  mongoose.connect('mongodb://localhost/27017');
 
  var catSchema = new mongoose.Schema({
     name: String,
@@ -7,7 +8,9 @@
     temperament: String
  });
  var Cat = mongoose.model('cats', catSchema);
- 
+//  var Cat = mongoose.model('cats', catSchema);
+
+
 //  var george =  new Cat({
 //      name: 'George',
 //      age: 11,
